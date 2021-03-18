@@ -5,9 +5,11 @@ on:
     types: published
   push:
     tags:
-      - 'v*'
-    watch:
-      types: [started]
+      - master
+    paths:
+      - 'x86_64/J4125.config'
+  watch:
+    types: [started]
 
 env:
   REPO_URL: https://github.com/qiangwushuang/openwrt.git
