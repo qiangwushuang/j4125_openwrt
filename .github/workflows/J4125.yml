@@ -4,10 +4,8 @@ on:
   release:
     types: published
   push:
-    branches:
-      - master
-    paths:
-      - 'x86_64/J4125.config'
+    tags:
+      - 'v*'
     watch:
       types: [started]
 
